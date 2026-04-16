@@ -53,7 +53,7 @@ function Carousel({img =''}){
             ></button>
           ))}
         </div>
-        <div className="carousel-inner">
+        <div className="carousel-inner alturaimgcarrousel">
           {slides.map((slide, index) => (
             <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`}>
        
@@ -65,12 +65,12 @@ function Carousel({img =''}){
               />
 
               {/* BOTÓN */}
-              <a
+              {/* <a
                  onClick={handlePagina}
                 className="btn btn-primary btn-cotizar"
               > 
                 VER MÁS
-              </a>
+              </a> */}
             </div>
             </div>
             

@@ -293,28 +293,38 @@ export const jsonCardMarcasMotos = [
   {
     titulo: 'DISCOVER',
     descripcion: 'descubre el mundo sin límites. 🌍 Más potencia, más aventura, más kilómetros por recorrer.',
-    imagen: '/images/Discover.jpg',
+    imagen: '/images/marcas/DISCOVER.png',
   },
   {
     titulo: 'BOXER',
     descripcion: 'hecha para rendir, diseñada para durar. 💪 Conquista más camino, más lejos, más fácil.',
-    imagen: '/images/Boxer.jpg',
+    imagen: '/images/marcas/BOXER.png',
   },
-  {
-    titulo: 'PLATINO',
-    descripcion: 'eficiencia sin límites. ⚡ Lleva tu economía más lejos, con cada kilómetro recorrido.',
-    imagen: '/images/platino.jpg',
-  },
+  // {
+  //   titulo: 'PLATINO',
+  //   descripcion: 'eficiencia sin límites. ⚡ Lleva tu economía más lejos, con cada kilómetro recorrido.',
+  //   imagen: '/images/platino.jpg',
+  // },
   {
     titulo: 'DOMINAR',
     descripcion: '¡Con Dominar, la carretera es tuya! 🛣️ Siente el poder y conquista cada kilómetro.',
-    imagen: '/images/dominarmarca.jpg',
+    imagen: '/images/marcas/DOMINAR.png',
   },
   {
     titulo: 'PULSAR',
     descripcion: '¡Siente el poder, domina el camino! 🏍️ Con Pulsar, la adrenalina es tu mejor copiloto.',
-    imagen: '/images/pulsar.jpg',
+    imagen: '/images/marcas/PULSAR.png',
   },
+  {
+    titulo: 'TORITO',
+    descripcion: '',
+    imagen: '/images/marcas/TORITO.png',
+  },
+  {
+    titulo: 'MAXIMA',
+    descripcion: '',
+    imagen: '/images/marcas/MAXIMA.png',
+  }
 ];
 
 export const jsonImagenCarousel = [

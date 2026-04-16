@@ -49,7 +49,7 @@ const CatalogoMoto = ({ ColorTitulo, colorPagina }) => {
   const handleCotizacion = () => {
     localStorage.setItem('producto', productoSeleccionado.producto_id);
     setProductoSeleccionado(null);
-    console.log('ss');
+   // console.log('ss');
 
     navigate('/cotizacion');
   };
@@ -184,11 +184,14 @@ const CatalogoMoto = ({ ColorTitulo, colorPagina }) => {
   const resumeAutoScroll = () => {
     if (!productoSeleccionado?.ficha_tecnica?.length) return;
   };
+  const excluidos = ['PLATINO', 'NO USAR'];
   return (
     <div className="container mt-4">
       <div className="row row__CatalogoMoto">
         <p className="Titlulo__CatalogoMoto">MOTOCICLETAS</p>
-        {segmentos.map((item) => {
+        {segmentos
+        .filter(item => !excluidos.includes(item.segmento_nombre.toUpperCase()))
+        .map((item) => {
           const cardInfo = jsonCardMarcasMotos.find((moto) => moto.titulo.toUpperCase() === item.segmento_nombre.toUpperCase());
           return (
             <CardMarcaMoto

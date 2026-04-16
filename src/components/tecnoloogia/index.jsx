@@ -1,30 +1,30 @@
 import './index.css';
 
-import cbs from '../../../public/images/tecnologia/asdf.png';
-import het from '../../../public/images/tecnologia/het2.png';
-import pgmfi from '../../../public/images/tecnologia/pgm.png';
-import idling from '../../../public/images/tecnologia/stop.png';
+import cbs from '../../../public/images/tecnologia/MotorDTS-i.jpg';
+import het from '../../../public/images/tecnologia/SistemaExhausTEC.jpg';
+import pgmfi from '../../../public/images/tecnologia/SistemaSNS.jpg';
+import idling from '../../../public/images/tecnologia/ABSdoblecanal.jpeg';
 
 const data = [
   {
     img: cbs,
-    title: 'CBS, Sistema de frenado combinado.',
-    text: 'Esta tecnología te brinda una mayor seguridad en el frenado, ya que este sistema te ofrece una distribución de fuerza en las dos ruedas permitiendo el freno trasero. Además este hace que la motocicleta reaccione de manera más efectiva ante cualquier obstáculo en el camino independientemente del tipo de superficie, disminuyendo además hasta en un 20% la distancia del frenado.',
+    title: 'Motor DTS-i (Digital Twin/Triple Spark Ignition)',
+    text: 'Sistema de encendido con doble o triple bujía que mejora la combustión, aumentando la potencia, reduciendo emisiones y optimizando el consumo de combustible.',
   },
   {
     img: het,
-    title: 'HET (Honda Eco Technology)',
-    text: 'Honda dio un paso más allá y rompió todos los parámetros con esta inteligente y brillante implementación, usada principalmente en motocicletas de bajo cilindraje, basada en materiales livianos y resistentes hace que la fricción interna del motor te brinde un mayor rendimiento en combustible ayudando además a reducir las emisiones de gases.',
+    title: 'Sistema ExhausTEC (Torque Expansion Chamber)',
+    text: 'Cámara de expansión en el escape que incrementa el torque a bajas revoluciones y mejora la eficiencia del motor en conducción urbana.',
   },
   {
     img: pgmfi,
-    title: 'PGM – FI (inyección electrónica programada)',
-    text: 'Como su propio nombre lo dice, este sistema inyecta combustible de manera programada a través de un compendio de sensores que garantizan la mezcla ideal a cualquier altura sobre el nivel del mar, dando como resultado un óptimo consumo del combustible garantizando además un mejor funcionamiento de la motocicleta.',
+    title: 'Sistema SNS (Spring-in-Spring Suspension)',
+    text: 'Suspensión con doble resorte que distribuye los impactos de forma inteligente, brindando mayor confort, estabilidad y absorción en diferentes tipos de terreno.',
   },
   {
     img: idling,
-    title: 'IDLING STOP (Stop and Go)',
-    text: '¿Cómo magia? Este sistema consta de que cuando la motocicleta se encuentra en total detenimiento, esta hace que el motor se apague, después de los 3 segundos, al acelerar, el motor vuelve a activarse automáticamente ofreciendo un ahorro hasta del 7% en combustible y adicional a esto, disminuye las emisiones contaminantes.',
+    title: 'ABS doble canal y modos de conducción',
+    text: 'Sistema avanzado de frenado que evita el bloqueo de ambas ruedas e integra modos de manejo y control de tracción en modelos recientes, mejorando la seguridad y el control en diferentes condiciones.',
   },
 ];
 
@@ -32,9 +32,7 @@ export default function TecnologiaHonda() {
   return (
     <section className="tecnologia">
       <h2>
-        TECNOLOGÍA HONDA QUE TE BRINDARÁ UN
-        <br />
-        MEJOR DESEMPEÑO
+      Tecnologías Bajaj Motocicletas
       </h2>
 
       <div className="tecnologia-grid">

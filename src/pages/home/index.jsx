@@ -128,7 +128,7 @@ export function Home() {
           </div>
         </div>
 
-        <div className="cb300f__section">
+        {/* <div className="cb300f__section">
           <div className="container">
             <div className="row align-items-center mb-5">
               <div className="col-lg-5 col-md-12 text-center mb-4 mb-lg-0">
@@ -158,7 +158,7 @@ export function Home() {
               </div>
             </div>
 
-            {/* ESPECIFICACIONES */}
+ 
             <div className="row text-center mt-5">
               <h4 className="cb300f__specs__title mb-4">ESPECIFICACIONES TÉCNICAS</h4>
 
@@ -193,7 +193,7 @@ export function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="conten--video--youtube">
           <div>
@@ -231,5 +231,6 @@ export function Home() {
         </div> */}
       </div>
     </div>
+
   );
 }

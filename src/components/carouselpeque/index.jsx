@@ -2,7 +2,7 @@ import React from 'react';
 import './carousel.css';
 import { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-function CarouselPeque({ img = '' }) {
+function CarouselPeque({ op = '' }) {
   const rutalogin = useNavigate();
 
   const jsonItemsTecnicos = [
@@ -10,39 +10,30 @@ function CarouselPeque({ img = '' }) {
       titulo: 'images/BannerAburraMotosBajaj-01.jpg',
     }
   ];
-
-  const rutas = useMemo(() => {
-    try {
-      if (typeof img === 'string' && img.trim() !== '') {
-        return JSON.parse(img);
-      }
-      if (Array.isArray(img)) {
-        return img;
-      }
-      return [];
-    } catch (e) {
-      console.error('Error al parsear img:', e);
-      return [];
-    }
-  }, [img]);
-
-  const slides = rutas.map((ruta, index) => ({
-    img: ruta,
-    alt: `Imagen ${index + 1}`,
-  }));
-
-  if (slides.length === 0) {
-    return <p>Cargando imágenes...</p>;
+const jsonServicio =[
+  {
+    titulo: 'images/servicios/garantia_1.jpeg'
+  },
+  {
+    titulo: 'images/servicios/garantia_2.jpeg'
+  },
+  {
+    titulo: 'images/servicios/garantia_3.jpeg'
+  },
+  {
+    titulo: 'images/servicios/garantia_4.jpeg'
   }
-
+]
+const imagenes = op === '1' ? jsonItemsTecnicos : jsonServicio;
+const carouselId = `carouseContenido-${op}`;
   return (
-    <div id="carouseContenido" className="carousel slide" data-bs-ride="carousel">
+    <div id={carouselId} className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-indicators" style={{ maxHeight: '550px' }}>
-        {jsonItemsTecnicos.map((_, index) => (
+        {imagenes.map((_, index) => (
           <button
             key={index}
             type="button"
-            data-bs-target="#carouseContenido"
+            data-bs-target={`#${carouselId}`}
             data-bs-slide-to={index}
             className={index === 0 ? 'active' : ''}
             aria-current={index === 0}
@@ -51,7 +42,7 @@ function CarouselPeque({ img = '' }) {
         ))}
       </div>
       <div className="carousel-inner">
-        {jsonItemsTecnicos.map((slide, index) => (
+        {imagenes.map((slide, index) => (
           <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
             <div className="carousel-img-wrapper">
               <img src={slide.titulo} className="d-block w-100 carousel__Imagen" alt={slide.titulo} />

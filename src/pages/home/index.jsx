@@ -96,7 +96,7 @@ export function Home() {
       <div className="container-fluid conte--carousel" style={{ backgroundColor: 'black', paddingTop: '100px' }}>
         <div className="row justify-content-center">
           <div className="col-8">
-            <CarouselPeque img={configuracionData?.rutaImgCarrousel || ''} />
+            <CarouselPeque op='1' />
           </div>
         </div>
       </div>
@@ -127,7 +127,13 @@ export function Home() {
             </div>
           </div>
         </div>
-
+        <div className="container-fluid conte--carousel" style={{ backgroundColor: 'black', paddingTop: '70px', paddingBottom:'100px' }}>
+        <div className="row justify-content-center">
+          <div className="col-8">
+            <CarouselPeque op='2' />
+          </div>
+        </div>
+      </div>
         {/* <div className="cb300f__section">
           <div className="container">
             <div className="row align-items-center mb-5">

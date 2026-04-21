@@ -129,7 +129,7 @@ export function Home() {
         </div>
         <div className="container-fluid conte--carousel" style={{ backgroundColor: 'black', paddingTop: '70px', paddingBottom:'100px' }}>
         <div className="row justify-content-center">
-          <div className="col-8">
+          <div className="col-11">
             <CarouselPeque op='2' />
           </div>
         </div>

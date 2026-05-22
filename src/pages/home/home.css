@@ -357,3 +357,26 @@ body {
   color: #d8d8d8;
   margin-top: 5px;
 }
+
+.div-contenido-bajaj{
+
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/images/FondoPulsarNS.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.cb190-overlay-bajaj {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}

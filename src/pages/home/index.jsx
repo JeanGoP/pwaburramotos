@@ -108,7 +108,8 @@ export function Home() {
         </div>
       </div>
       <div>
-        <div style={{ background: '#000000' }}>
+        <div  className='div-contenido-bajaj'>
+          <div className='cb190-overlay-bajaj'>  </div>
           <div className="container-fluid">
             <div className="row  justify-content-center " style={{ position: 'relative' }}>
               {/* {jsonSeccionMotoDetallada.map((item, idx) => ( */}
@@ -119,7 +120,7 @@ export function Home() {
             </div>
           </div>
         </div>
-
+       
         <div style={{ background: 'black' }}>
           <div className="container">
             <div className="row mb-0" id="contenidoMotocicleta">
